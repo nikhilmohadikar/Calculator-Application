@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Calculator Application</title>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/99e4a8e3d4.js" crossorigin="anonymous"></script>
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font Kit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-heading">
+            <div class="menu-bars">
+                <button><i class="fa-solid fa-bars"></i></button>
+                <span>
+                    <h2>Standard</h2>
+                </span>
+                <button><i class="fa-solid fa-expand"></i></button>
+            </div>
+            <div class="history-section custom-scrollbar">
+                <button id="history-btn">History</button>
+                <button id="memory-btn">Memory</button>
+
+                <div class="history_container" id="history_container">
+                    <div class="history" id="history"></div>
+                    <!-- <div class="color-container-1" id="color-container-1">
+                        <div class="color1">9 * 4 = </div>
+                        <div class="color2">36</div>
+                    </div>
+                    <div class="color-container-1" id="color-container-2">
+                        <div class="color1">9 * 4 = </div>
+                        <div class="color2">36</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="input-display">
+            <span id="number" class="number"></span>
+            <input type="text" name="display" type="number" placeholder="0" id="input-box" onkeyup="numberAccept()">
+        </div>
+        <div class="m-headings">
+            <button value="MC" disabled="disabled">MC</button>
+            <button value="MR" disabled="disabled">MR</button>
+            <button value="M+" disabled="disabled">M+</button>
+            <button value="M-" disabled="disabled">M-</button>
+            <button value="MS" disabled="disabled">MS</button>
+        </div>
+        <div class="main-container">
+            <main>
+                <div class="buttons-btn">
+                    <button value="%" class="shadow">%</button>
+                    <button value="CE" class="shadow">CE</button>
+                    <button value="C" class="shadow">C</button>
+                    <button value="delete" class="shadow"><i class="fa-solid fa-delete-left"></i></button>
+
+                    <button value="1/x" class="shadow">1/x</button>
+                    <button value="x²" class="shadow">x²</button>
+                    <button value="2√x" class="shadow">2√x</button>
+                    <button value="/" class="shadow big-text">&divide;</button>
+
+                    <button value="7" class="faint-shadow">7</button>
+                    <button value="8" class="faint-shadow">8</button>
+                    <button value="9" class="faint-shadow">9</button>
+                    <button value="*" class="shadow big-text">&times;</button>
+
+                    <button value="4" class="faint-shadow">4</button>
+                    <button value="5" class="faint-shadow">5</button>
+                    <button value="6" class="faint-shadow">6</button>
+                    <button value="-" class="shadow big-text">-</button>
+
+                    <button value="1" class="faint-shadow">1</button>
+                    <button value="2" class="faint-shadow">2</button>
+                    <button value="3" class="faint-shadow">3</button>
+                    <button value="+" class="shadow big-text">+</button>
+
+                    <button value="+/-" class="faint-shadow">+/-</button>
+                    <button value="0" class="faint-shadow">0</button>
+                    <button value="." class="faint-shadow">.</button>
+                    <button value="=" class="blue big-text">=</button>
+                </div>
+            </main>
+        </div>
+        <div class="delete-icon">
+            <button id="trash"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
